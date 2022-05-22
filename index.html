@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id = "basketballStats">
+    <div id = "options">
+        <div id = "filterYears" class="highlight">
+            <input type="checkbox" id="filterYearsOrNo">
+            <label for="filterYearsOrNo">Year Filter</label>
+            <p id = "yearsTextBox">1951-1952</p>
+            <input type="range" min="1951" max="2021" value="1951" class="slider" id="yearFilterSlider">
+        </div>
+        <div id = "rowLimit" class="highlight">
+            <label for="amountOfRows">Max Rows:</label>
+            <input type="text" id="amountOfRows" placeholder = "default is 100">
+        </div>
+        <div id = "filterByTeam" class="highlight">
+            <label for="teamFilterBox">Filter By Team:</label>
+            <input type="text" id="teamFilterBox">
+        </div>
+        <div id = "filterByPlayer" class="highlight">
+            <label for="playerFilterBox">Filter By Player:</label>
+            <input type="text" id="playerFilterBox">
+        </div>
+        <div id = "filterByGames" class="highlight">
+            <label for="gameFilterBox">Filter By Games Played:</label>
+            <input type="text" id="gamesFilterBox">
+        </div>
+        <div id = "calculateTotals" class="highlight">
+            <input type="checkbox" id="playerTotal">
+            <label for="playerTotal">Career Average</label>
+        </div>
+    </div>
+    <div id = "tbContainer"></div>
+</div>
+
+<script type = "module" src="./main.js"></script>
+</body>
+
+</html>
